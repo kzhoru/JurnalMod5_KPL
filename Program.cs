@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-﻿
+
+
 public class PemrosesData
 {
     public dynamic DapatkanNilaiTerbesar<T>(T x, T y, T z)
@@ -16,7 +16,9 @@ public class PemrosesData
             terbesar = var3;
         }
         return terbesar;
-=======
+    } 
+}
+
 ﻿class SimpleDataBase<T>
 {
     List<T> storedData;
@@ -40,7 +42,6 @@ public class PemrosesData
         {
             Console.WriteLine($"Data {i+1} berisi: {storedData[i]}, yang disimpan pada waktu UTC: {inputDates[i]}");
         }
->>>>>>> implementasi-generic-class
     }
 }
 
@@ -48,12 +49,8 @@ public class Program
 {
     public static void Main()
     {
-<<<<<<< HEAD
-        PemrosesData data = new PemrosesData();
-        Console.WriteLine("Nilai Max: " + data.DapatkanNilaiTerbesar<float>(10, 30, 22));
-    }
-}
-=======
+        PemrosesData data1 = new PemrosesData();
+        Console.WriteLine("Nilai Max: " + data1.DapatkanNilaiTerbesar<float>(10, 30, 22));
         SimpleDataBase<float> data = new SimpleDataBase<float>();
         data.addNewData(10);
         data.addNewData(30);
@@ -61,6 +58,3 @@ public class Program
         data.PrintAllData();
     }
 }
-
-
->>>>>>> implementasi-generic-class
